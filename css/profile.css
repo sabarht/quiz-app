@@ -1,0 +1,26 @@
+img {
+  border-radius: 50%;
+  width: 200px;
+}
+.profile {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+.user {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.dark-mode {
+  display: flex;
+  justify-content: space-between;
+}
+.user-settings {
+  display: flex;
+
+  flex-direction: column;
+  gap: 20px;
+}

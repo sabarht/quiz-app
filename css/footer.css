@@ -1,0 +1,26 @@
+footer {
+  background-color: var(--primary-color);
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+}
+
+footer li {
+  padding: 20px 36px;
+}
+.nav-selected {
+  background-color: white;
+}
+ul {
+  padding: 0;
+}
+.navbar {
+  width: 70%;
+  margin: 0 auto;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+footer a {
+  width: 100%;
+}

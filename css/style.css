@@ -1,16 +1,33 @@
 @import url(question-card.css);
+@import url(footer.css);
+@import url(profile.css);
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Expanded:wght@400;500;600;700;800&family=Roboto+Slab:wght@500&display=swap");
+:root {
+  --black: #0000;
+  --gray: #393a3c;
+  --main-bg-color: #f3f4f1;
+  --body-bg-color: #93ccd9;
+  --primary-color: #e2d4ff;
+  --secondary-color: #fedf9a;
+  --button-color: #dcffe1;
+  --neon: #cfff04;
+}
 * {
   box-sizing: border-box;
+  font-family: sans-serif;
   margin: 0;
 }
 body {
-  background-color: blue;
+  background-color: var(--body-bg-color);
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 header {
-  background-color: red;
+  background-color: var(--secondary-color);
+  position: sticky;
+  z-index: 1;
+  top: 0;
   text-align: center;
   width: 100%;
 }
@@ -19,23 +36,14 @@ h1 {
   padding: 24px;
 }
 main {
-  background-color: yellowgreen;
-  padding: 40px;
-}
-
-footer {
-  background-color: aquamarine;
-  position: fixed;
-  bottom: 0;
+  background-color: var(--main-bg-color);
   width: 100%;
+  padding: 24px;
 }
-.navbar {
-  margin: 0 auto;
-  width: 60%;
-  padding: 24px 36px;
-  list-style-type: none;
-  justify-content: space-between;
-  display: flex;
+.title {
+  text-align: center;
+  margin-bottom: 12px;
+  font-family: "Roboto Slab", serif;
 }
 
 @media (min-width: 1200px) {
