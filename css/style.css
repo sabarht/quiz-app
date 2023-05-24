@@ -42,9 +42,17 @@ h1 {
 main {
   background-color: var(--main-bg-color);
   width: 100%;
+  min-height: 100vh;
   padding: 24px;
 }
 
+@media (min-width: 900px) {
+  .questions {
+    padding: 0 40px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
 @media (min-width: 1200px) {
   header,
   main,
