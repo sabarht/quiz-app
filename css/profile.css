@@ -2,6 +2,13 @@ img {
   border-radius: 50%;
   width: 200px;
 }
+.profile h3 {
+  font-weight: 500;
+}
+.profile p {
+  color: var(--gray);
+  font-size: 15px;
+}
 .profile {
   display: flex;
   flex-direction: column;
