@@ -9,6 +9,8 @@
   padding: 32px;
   margin: 4px auto;
   position: relative;
+  flex: 1 1 0px;
+  width: 60%;
   /* box-shadow: 4px 4px 0px 1px hsla(0, 0%, 0%, 0.78); */
 }
 .card-bookmark {

@@ -47,10 +47,16 @@ main {
 }
 
 @media (min-width: 900px) {
+  .question-card {
+    min-width: 45%;
+    gap: 240px;
+    /* box-shadow: 4px 4px 0px 1px hsla(0, 0%, 0%, 0.78); */
+  }
   .questions {
     padding: 0 40px;
     flex-direction: row;
     flex-wrap: wrap;
+    gap: 24px;
   }
 }
 @media (min-width: 1200px) {
