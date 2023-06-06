@@ -14,19 +14,70 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
-    <title>Add new cards</title>
+
+    <title>create new cards</title>
   </head>
   <body>
-    <form>
-      <label for="new-question">Your question: </label>
-      <textarea
-        rows="3"
-        name="new-question"
-        id="new-question"
-        maxlength="150"
-      ></textarea>
-      <label for="answer">Your answer: </label>
-      <textarea rows="3" name="answer" id="answer" maxlength="150"></textarea>
-    </form>
+    <header>
+      <h1>Quiz App</h1>
+    </header>
+    <main>
+      <form data-js="form">
+        <div>
+          <label for="question">Your question: </label>
+          <textarea
+            rows="3"
+            name="question"
+            id="question"
+            maxlength="150"
+          ></textarea>
+        </div>
+        <div>
+          <label for="answer">Your answer: </label>
+          <textarea
+            rows="3"
+            name="answer"
+            id="answer"
+            maxlength="150"
+          ></textarea>
+        </div>
+        <div>
+          <label for="tag">Tag: </label>
+          <input type="text" name="tag" id="tag" />
+        </div>
+
+        <button type="submit" data-js="submitForm">Submit</button>
+      </form>
+      <section class="questions" data-js="card-section"></section>
+    </main>
+    <footer>
+      <nav>
+        <ul class="navbar">
+          <li>
+            <a href="index.html " aria-label="go to home page"
+              ><span class="material-symbols-outlined"> home </span></a
+            >
+          </li>
+          <li>
+            <a href="bookmarks.html" aria-label="go to bookmarks page"
+              ><span class="material-symbols-outlined"> bookmarks </span></a
+            >
+          </li>
+          <li class="nav-selected">
+            <a
+              href="form.html"
+              aria-label="go to form page for creating new cards"
+              ><span class="material-symbols-outlined"> add_circle </span></a
+            >
+          </li>
+          <li>
+            <a href="profile.html" aria-label="go to profile page"
+              ><span class="material-symbols-outlined"> person </span></a
+            >
+          </li>
+        </ul>
+      </nav>
+    </footer>
+    <script src="js/form.js"></script>
   </body>
 </html>
