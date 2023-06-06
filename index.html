@@ -26,8 +26,8 @@
           <button class="card-bookmark">
             <span class="material-symbols-outlined"> bookmark </span>
           </button>
-          <button class="show-answer trigger">Show answer</button>
-          <p hidden>No. There are some HTML tags that don't need a closing tag. For example: <image> tag, <br> tag
+          <button class="show-answer " data-js="answer-button">Show answer</button>
+          <p >No. There are some HTML tags that don't need a closing tag. For example: <image> tag, <br> tag
             !</p>
           <ul class="category-tags">
             <li>#html</li>
@@ -40,8 +40,8 @@
             <button class="card-bookmark">
                 <span class="material-symbols-outlined"> bookmark </span>
             </button>
-            <button class="show-answer trigger">Show answer</button>
-            <p hidden>The color of the bullet is always the color of the first text of the
+            <button class="show-answer ">Show answer</button>
+            <p >The color of the bullet is always the color of the first text of the
                 list. So, if you want to change the color of the bullet, you must
                 change the color of the text.
             </p>
@@ -58,7 +58,7 @@
           <button class="card-bookmark">
             <span class="material-symbols-outlined"> bookmark </span>
           </button>
-          <button class="show-answer trigger">Show answer</button>
+          <button class="show-answer ">Show answer</button>
           <ul class="category-tags">
             <li>#html</li>
             <li>#flexbox</li>
@@ -99,22 +99,30 @@
       <nav>
         <ul class="navbar">
           <li class="nav-selected">
-            <a href="index.html "
+            <a href="index.html "  aria-label="go to home page"
               ><span class="material-symbols-outlined"> home </span></a
             >
           </li>
           <li>
-            <a href="bookmarks.html"
+            <a href="bookmarks.html"  aria-label="go to bookmarks page"
               ><span class="material-symbols-outlined"> bookmarks </span></a
             >
           </li>
           <li>
-            <a href="profile.html"
+            <a href="form.html"  aria-label="go to form page for creating new cards"
+              ><span class="material-symbols-outlined">
+                add_circle
+                </span></a
+            >
+          </li>
+          <li>
+            <a href="profile.html" aria-label="go to profile page"
               ><span class="material-symbols-outlined"> person </span></a
             >
           </li>
         </ul>
       </nav>
     </footer>
+    <script src="index.js"></script>
   </body>
 </html>
