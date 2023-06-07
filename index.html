@@ -20,22 +20,23 @@
       <h1>Quiz App</h1>
     </header>
     <main>
-      <section class="questions">
-        <div class="question-card">
+      <section class="questions" data-js="section">
+
+        <article class="question-card">
           <p class="question">Do all HTML tags have an end tag?</p>
           <button class="card-bookmark">
             <span class="material-symbols-outlined"> bookmark </span>
           </button>
           <button class="show-answer " data-js="answer-button">Show answer</button>
-          <p >No. There are some HTML tags that don't need a closing tag. For example: <image> tag, <br> tag
+          <p class="answer-element-hidden" data-js="answer" >No. There are some HTML tags that don't need a closing tag. For example: <image> tag, <br> tag
             !</p>
           <ul class="category-tags">
             <li>#html</li>
             <li>#flexbox</li>
             <li>#JS</li>
           </ul>
-        </div>
-        <div class="question-card">
+        </article>
+        <article class="question-card">
             <p class="question">Is it possible to change the color of the bullet?            </p>
             <button class="card-bookmark">
                 <span class="material-symbols-outlined"> bookmark </span>
@@ -52,8 +53,8 @@
             <li>#flexbox</li>
             <li>#JS</li>
           </ul>
-        </div>
-        <div class="question-card">
+        </article>
+        <article class="question-card">
           <p class="question">How to make flexbox items the same size?</p>
           <button class="card-bookmark">
             <span class="material-symbols-outlined"> bookmark </span>
@@ -64,8 +65,8 @@
             <li>#flexbox</li>
             <li>#JS</li>
           </ul>
-        </div>
-        <div class="question-card">
+        </article>
+        <article class="question-card">
           <p class="question">What is a proper question to write here?</p>
           <button class="card-bookmark">
             <span class="material-symbols-outlined"> bookmark </span>
@@ -78,21 +79,8 @@
             <li>#flexbox</li>
             <li>#JS</li>
           </ul>
-        </div>
-        <div class="question-card">
-          <p class="question">What is a proper question to write here?</p>
-          <button class="card-bookmark">
-            <span class="material-symbols-outlined"> bookmark </span>
-          </button>
-          <button class="show-answer">Show answer</button>
-          <p hidden>This is the answer!</p>
-
-          <ul class="category-tags">
-            <li>#html</li>
-            <li>#flexbox</li>
-            <li>#JS</li>
-          </ul>
-        </div>
+        </article>
+       
       </section>
     </main>
     <footer>
@@ -123,6 +111,6 @@
         </ul>
       </nav>
     </footer>
-    <script src="index.js"></script>
+    <script src="js/index.js"></script>
   </body>
 </html>
