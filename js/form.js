@@ -14,8 +14,8 @@ form.addEventListener("submit", (e) => {
 
   article.className = "question-card";
   article.innerHTML = `
-  <p class="question">${question}</p>
-  <p >${answer}</p>
+  <p class="question">Your Question: ${question}</p>
+  <p >Your Answer: ${answer}</p>
   <ul class="category-tags">
   <li>${tag}</li>
   </ul>
@@ -26,12 +26,19 @@ form.addEventListener("submit", (e) => {
 });
 
 const questionChars = document.querySelector('[ data-js="question-chars"]');
+const answerChars = document.querySelector('[ data-js="answer-chars"]');
 form.addEventListener("input", () => {
   const questionTextarea = document.querySelector(
     '[ data-js="question-input"]'
   );
 
-  const remainingChars = 150 - questionTextarea.value.length;
-  const message1 = `${remainingChars} characters left`;
+  const remainingQChars = 150 - questionTextarea.value.length;
+  const message1 = `${remainingQChars} characters left`;
   questionChars.innerText = message1;
+
+  const answerTextarea = document.querySelector('[ data-js="answer-input"]');
+
+  const remainingAnswerChars = 150 - answerTextarea.value.length;
+  const message2 = `${remainingAnswerChars} characters left`;
+  answerChars.innerText = message2;
 });
