@@ -1,22 +1,23 @@
-const bookmarkButton = document.querySelector(".card-bookmark");
+const bookmarkButton = document.querySelectorAll(".card-bookmark");
+console.log(bookmarkButton);
 
-bookmarkButton.addEventListener("click", () => {
-  bookmarkButton.classList.toggle("bookmarked");
-
-  // if (bookmarkButton.classList.contains("bookmarked")) {
-
-  // } else {
-  // }
+bookmarkButton.forEach((eachButton) => {
+  eachButton.addEventListener("click", () => {
+    eachButton.classList.toggle("bookmarked");
+  });
 });
 
 const answerButton = document.querySelector('[data-js="answer-button"]');
-answerButton.addEventListener("click", () => {
-  if (answerButton.innerHTML == "Show answer") {
-    answerButton.textContent = "Hide Answer";
+const answerElement = document.querySelector('[data-js="answer"]');
+
+answerButton.addEventListener("click", toggleButton);
+
+function toggleButton() {
+  if (answerElement.classList.contains("answer-element-hidden")) {
+    answerElement.classList.remove("answer-element-hidden");
+    answerButton.innerHTML = "Hide Answer";
   } else {
-    answerButton.textContent = "Show answer";
+    answerElement.classList.add("answer-element-hidden");
+    answerButton.innerHTML = "Show Answer";
   }
-  console.log("answerButton.value");
-  console.log(answerButton.innerHTML);
-  // answerButton.classList.toggle
-});
+}

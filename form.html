@@ -22,32 +22,36 @@
       <h1>Quiz App</h1>
     </header>
     <main>
-      <form data-js="form">
-        <div>
-          <label for="question">Your question: </label>
-          <textarea
-            rows="3"
-            name="question"
-            id="question"
-            maxlength="150"
-          ></textarea>
-        </div>
-        <div>
-          <label for="answer">Your answer: </label>
-          <textarea
-            rows="3"
-            name="answer"
-            id="answer"
-            maxlength="150"
-          ></textarea>
-        </div>
-        <div>
-          <label for="tag">Tag: </label>
-          <input type="text" name="tag" id="tag" />
-        </div>
+      <fieldset>
+        <legend>Add a new Card</legend>
+        <form data-js="form">
+          <div data-js="question-unit">
+            <label for="question">Your question: </label>
+            <textarea
+              data-js="question-input"
+              rows="5"
+              name="question"
+              id="question"
+              maxlength="150"
+            ></textarea>
+          </div>
+          <div data-js="answer-input">
+            <label for="answer">Your answer: </label>
+            <textarea
+              rows="5"
+              name="answer"
+              id="answer"
+              maxlength="150"
+            ></textarea>
+          </div>
+          <div>
+            <label for="tag">Tag: </label>
+            <input type="text" name="tag" id="tag" />
+          </div>
 
-        <button type="submit" data-js="submitForm">Submit</button>
-      </form>
+          <button type="submit" data-js="submitForm">Submit</button>
+        </form>
+      </fieldset>
       <section class="questions" data-js="card-section"></section>
     </main>
     <footer>
